@@ -4,11 +4,47 @@
     margin: 0;
     padding: 0;
     outline: 0;
-    font-weight: 300;
+    font-weight: 600;
     box-sizing: border-box;
 }
 :root{
-    --primary: #F49300
-    --primary-light: #ffc266
-    --secondary: #F9F9F9
+    --primary: #F49300;
+    --primry-light: #ffc266;
+    --secondary: #F9F9F9;
+}
+header{
+    background-color: var(--primary) ;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+}
+header picture img {
+    height: 7rem;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+head nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+header nav ul li {
+    margin: 0 1.5rem;
+}
+header nav ul li a { 
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var()
+}
+main {
+min-height: 80vh;
+}
+footer {
+    background-color: var() ;
+    height: 4rem;
+    display: flex;
+    align-items: center;
 }
