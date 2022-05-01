@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
 * {
     font-family: "Josefin Sans";
     margin: 0;
@@ -7,41 +8,131 @@
     font-weight: 600;
     box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
 :root{
     --primary: #F49300;
-    --primry-light: #ffc266;
+    --primary-light: #ffc266;
     --secondary: #F9F9F9;
+    --black: #000000;
+    --white: #FFFFFF;
+    --purple: #E9DDF2;
 }
+
 header{
-    background-color: var(--primary) ;
-    height: 17rem;
+    background-color: var(--primary);
+    height: 12rem;
     display: flex;
     align-items: center;
 }
-header picture img {
-    height: 7rem;
-}
-header nav {
-    width: 100%;
+header picture {
+    margin-left: 3rem;
+    height: 9rem;
     display: flex;
+    flex-direction: row;
+}
+
+#caderninho {
+    margin-left: 22.5rem;
+    margin-top: 5rem;
+    position: absolute;
+    height: 4.2rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
-head nav ul {
+
+#lupao {
+    max-width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+header nav div {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary);
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 118.5px;
+}
+
+header nav div input {
+    border: var(--secondary);
+}
+
+header nav ul {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 header nav ul li {
+    list-style: none;
     margin: 0 1.5rem;
 }
 header nav ul li a { 
     text-decoration: none;
-    font-size: 1.2rem;
-    color: var()
+    font-size: 1.7rem;
+    color: var(--black);
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    border-radius: 146px;
 }
+
+/* MAIN */
+
 main {
-min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
 }
+
+main ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+main ul li h1 {
+    margin: 1.5rem;
+    padding: 2rem;
+    background-color: var(--primary-light);
+    border-radius: 146px;
+}
+
+main .divContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .divContainer div {
+    justify-content: center;
+    background-color: var(--purple);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 69px;
+}
+
+main .divContainer div h1 {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+main .divContainer div img {
+    justify-content: center;
+    height: 10rem;
+    border-radius: 66px;
+}
+
 footer {
     background-color: var() ;
     height: 4rem;
