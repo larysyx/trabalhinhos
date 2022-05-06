@@ -29,6 +29,7 @@ header{
     background-color: var(--primary);
     height: 12rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 header picture {
@@ -114,7 +115,9 @@ main .divContainer {
 }
 
 main .divContainer div {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--purple);
     padding: 2rem;
     margin: 1rem;
