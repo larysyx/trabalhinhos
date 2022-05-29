@@ -7,53 +7,37 @@
     <title>receitas da mamacita</title>
     <link rel="stylesheet" href="./css/estilo.css"/>
 </head>
-<body>
-    <header>
-        <picture>
-            <a href="index.html">
-        </picture>
-
-    </header>
-    <main calss="content"> 
-        <section class="auth">
-            <form action="cadastrar.html" method="post">
-                <aside>
-                    <img src="./img/user.png">
-                <aside> 
-                <label for="email">E-mail</label>
-                <div>
-                    <input 
-                    type="email" 
-                    name="email" 
-                    id="email" 
-                    required
-                    />
-                </div>
-                <label for="senha">Senha</label>
-                <div>
-                    <input 
-                    type="password" 
-                    name="senha" 
-                    id="senha" 
-                    required
-                    />
-                </div>
-                <label for="confirmar">Confirmar senha</label>
-                <div>
-                    <input 
-                    type="password" 
-                    name="confirmar" 
-                    id="confirmar" 
-                    required
-                    />
-                </div>
-                <p>
-                    <a href="login.html">Ja tenho cadastro</a>
-                    <button type="submit">Cadastrar</button>
-                </p>        
-        </form>
-        </section>
+<body class="container">
+    <main class="loginMain">
+        <div class="divLoginBack">
+            <picture>
+                <img src="./img/youtube-svgrepo-com (2) 1.svg" alt="">
+                <img src="./img/pinterest.svg" alt="">
+                <img src="./img/facebook.svg" alt="">
+                <img src="./img/instagram.svg" alt="">
+            </picture>
+            <div class="divLogin">
+                <form method="post" class="loginForm">
+                    <div id="bonequinho">
+                        <img src="./img/user.png"> 
+                    </div>
+                    <div>
+                        <input placeholder="usuário" type="usuario" name="usuario" required />
+                        <input placeholder="email" type="email" name="email" required />
+                        <input placeholder="senha"type="password" name="senha" required />
+                    </div>
+                    <div id="botao">
+                        <button type="submit">Criar</button>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="login.html">Já tem uma conta? Acesse já</a>
+                        </li>
+                    </ul>     
+                </form>
+                <img src="./img/livro2.png" alt="" class="caderninho" id="caderno">
+            </div>
+        </div>
     </main>
-    <footer> </footer>
 </body>
 </html>
